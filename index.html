@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .backgroundimage {
+            background-color: #F9F6E2; /* You can change this color to your preference */
+        }
+    </style>
+</head>
+<body>
+  <div class="backgroundimage display flex items-center px-32">
+    <div> <p class="text-2xl  font-bold mb-5 mx-10 mr-32">Purchase TK 200 or<br> above  and get <span class="text-pink-600">20% off</span></p></div>
+  
+  
+   
+      <div class="hero-content text-center text-neutral-content"></div>
+      <div class="max-w-md flex flex-col  items-end">
+       
+        <figure><img src="/images/Summer 1.png" alt="Shoes" /></figure>
+    
+    </div>
+  </div>
+ 
+
+  <div class="display flex mr-20">
+    <div>
+      <h1 class="text-2xl ml-32 font-semibold mb-5">Kitchenware</h1>
+      <section class="flex justify-center items-center mb-10">
+        <div class="flex justify-center gap-3 w-3/4">
+          <div id="buy" class="card w-96 bg-base-100 border">
+            <figure><img src="/images/prod1.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center font-semibold">Spoon</h2>
+              <h2 id="product-price" class="card-title text-center">Price: <span>39.00</span>tk</h2>
+              <button onclick="handleclickbtn(this)" class="btn box-btn">Add to cart</button>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+          <div class="buy1 card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/prod2.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center font-semibold">Board</h2>
+              <h2 class="product-price1 card-title text-center">Price: <span>25.00</span>tk</h2>
+              <button onclick="handleclickbtn(this)" class="btn box-btn">Add to cart</button>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+          <div id="buy2" class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/prod3.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center font-semibold">Home Cooker</h2>
+              <h2 id="product-price2" class="card-title text-center">Price: <span>49.00</span>tk</h2>
+              <button onclick="handleclickbtn(this)" class="btn box-btn">Add to cart</button>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h1 class="text-2xl ml-32 font-semibold mb-5 mt-5">Sportswear</h1>
+      <section class="flex justify-center items-center mb-10">
+        <div class="flex justify-center gap-3 w-3/4">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/prod4.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center font-semibold">Sports back cap</h2>
+              <h2 class="card-title text-center">Price: <span>49.00</span>tk</h2>
+              <button onclick="handleclickbtn(this)" class="btn box-btn">Add to cart</button>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/prod5.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center font-semibold">Full jersey set</h2>
+              <h2 class="card-title text-center">Price: <span>69.00</span>tk</h2>
+              <button onclick="handleclickbtn(this)" class="btn box-btn">Add to cart</button>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/prod6.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center font-semibold">Sports cates</h2>
+              <h2 class="card-title text-center">Price: <span>159.00</span>tk</h2>
+              <button onclick="handleclickbtn(this)" class="btn box-btn">Add to cart</button>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="pricebox w-1/4 mr-10">
+      <div>
+        <h2>Have a coupon?</h2>
+        <ul id="selected-items"></ul>
+        <h6>Total: <span id="total">0.00</span>tk</h6>
+      </div>
+    </div>
+  </div>
+
+  <script src="buy.js"></script>
+</body>
+</html>
+```
